@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  background-color: #C0C0C0;
+}
+
+a:hover {
+  color: #4682B4;
+}
+
+/*header properties*/
+
+header {
+  height: 8em;
+  padding: 20px 20px 0 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  margin-bottom: 15px;
+}
+
+header div.logo {
+  float: left;
+}
+
+header div.logo h1 {
+  margin: 0;
+}
+
+header div.logo h3 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+header div.navigation {
+  float: right;
+  margin-top: 15px;
+}
+
+/*navigation properties*/
+
+header div.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+
+header div.navigation li.menuitem {
+  display: inline-block;
+  padding-right: 1.5rem;
+  border-left: 1px solid rgba(0, 0, 0, .20);
+}
+
+header div.navigation li.menuitem a:hover {
+  color: #4682B4;
+}
+
+header div.navigation li#mi-1 {
+  border-left: none;
+}
+
+header div.navigation li.menuitem a {
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 20px;
+  color: black;
+}
+
+header div.search {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+::placeholder {
+  color: #000;
+}
+
+.container-1 {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  margin-left: 26%;
+}
+
+.container-1 .icon{
+  z-index: 1;
+  color: #000;
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+  outline:none;
+  background: #D3D3D3;
+}
+
+header div.search input[type="text"] {
+  width: 300px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 15px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+header div.search button {
+  background: #D3D3D3;
+  border: none;
+  height: 50px;
+  font-size: 10pt;
+  color: #262626;
+  padding: 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+div#search-radios {
+  display: none;
+  background: #eee;
+  position: absolute;
+  width: 150px;
+  border-radius: 0 0 5px 5px;
+  margin-left: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  z-index: 100;
+}
+
+/*newsfeed properties*/
+
+main {
+  width: 100%;
+}
+
+main div.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/*post properties*/
+
+main div.container div.post-card {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  width: 525px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1600px) {
+  main div.container div.post-card {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main div.container div.post-card {
+    width: 475px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main div.container div.post-card {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main div.container div.post-card {
+    width: 425px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main div.container div.post-card {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main div.container {
+    width: 100%;
+    display: block;
+    grid-template-columns: none;
+  }
+  
+  main div.container div.post-card {
+    width: 420px;
+  }
+}
+
+/*header properties*/
+
+main div.container div.post-card div.header {
+  width: 100%;
+  height: 50px;
+}
+
+main div.container div.post-card div.header div.author {
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+main div.container div.post-card div.header div.time-stamp {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+main div.container div.post-card div.header h2 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+/*caption and body properties*/
+
+.card-body {
+  position: relative;
+  height: 205px;
+}
+
+main div.container div.post-card div.card-body p {
+  margin: 15px;
+  margin-bottom: 0px;
+}
+
+main div.container div.closing-information {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+main div.container div.closing-information hr {
+  border: 0.5px solid #A8A8A8;
+}
+
+main div.container div.closing-information span#comments {
+  display: inline-block;
+  color: #4682B4;
+}
+
+main div.container div.closing-information span#view-post {
+  display: inline-block;
+  color: #4682B4;
+}
+
+div.closing-information a {
+  text-decoration: none;
+  color: #4682B4;
+}
+
+div.closing-information a:visited {
+  color: #4682B4;
+}
+
+main div.container div.closing-information span#hashtags {
+  display: inline-block;
+}
+
+main div.container div.closing-information span#location {
+  display: inline-block;
+  float: right;
+}
+
+/*new post page*/
+
+main div.new-post-container {
+  width: 100%;
+}
+
+div.form-container-2 {
+  background: #fff;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  padding-top: 15px;
+  margin-top: 30px;
+  max-width: 700px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.main-container {
+  border-bottom: 1px solid #eee;
+}
+
+div.form-container-2 div.title-container {
+  width: 90%;
+  margin: auto;
+  background: #ddd;
+  border-radius: 10px 10px 0px 0px;
+  border-collapse: separate;
+  border: 1px solid #eee;
+  border-bottom: none;
+}
+
+div.form-container-2 span {
+  padding-left: 25px;
+  font-size: 19px;
+  color: #4b4f56;
+}
+
+div.form-container-2 div.post-content {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #eee;
+  border-bottom: none;
+}
+
+div.new-post-container div.form-container-2 div.post-content input#title {
+  padding: 12px 20px;
+  border: none;
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+textarea#description {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  resize: none;
+}
+
+.button-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+.post-button {
+  box-sizing: border-box;
+  height: 28px;
+  width: 90%;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 0 16px;
+  background: #1877f2;
+  color: white;
+  display: inline-block;
+  margin: 10px 0 10px 0;
+  border-radius: 4px;
+  border: 0;
+}
+
+div.form-container-2 ::placeholder {
+  color: #575656;
+}
+
+div.form-container-2 select {
+  border-radius: 4px;
+  color: #1c1e21;
+  font-size: 15px;
+  font-weight: normal;
+  height: 28px;
+  line-height: 20px;
+  background: #fff;
+}
+
+div.form-container-2 .input-container {
+  text-align: center;
+  width: 90%;
+  border: 1px #eee solid;
+  margin: auto;
+  border-top: none;
+  border-bottom: none;
+}
+
+div.form-container-2 .selection-inputs {
+  display: inline-block;
+}
+
+div#image-button {
+  padding-top: 10px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #4682B4;
+  font-weight: 600;
+  border: 1px solid #eee;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+div#image-container {
+  text-align: center;
+  border: 1px solid #eee;
+  border-top: none;
+  border-bottom: none;
+  width: 90%;
+  margin-left: 5%;}
+
+div#image-container span {
+  font-size: 14px;
+}
+
+div#image-container span {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  padding: 10px 0;
+}
+
+div#image-container input[type="url"] {
+  width: 80%;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  margin: 5px 0;
+}
+
+/*account page with complaint items*/
+
+.complaints-container {
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.header-container {
+  margin-bottom: 15px;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: 45px;
+  grid-auto-rows: minmax(30px, auto);
+  width: 100%;
+  margin: auto;
+  background: #fff;
+}
+
+span.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: 300px 200px 300px 150px 250px;
+}
+
+.items-element span {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.compaint-item {
+  border: solid 1px #eee;
+  border-bottom: none;
+}
+
+.compaint-item:lastchild {
+  border-bottom: solid 1px #eee;
+}
+
+.title-element {
+  margin-top: 10px;
+}
+
+div#title {
+  margin-left: 15px;
+}
+
+/*view post and comments styles*/
+
+main.main-comment-container div.little-comment-container {
+  width: 80%;
+  margin-left: 10%;
+  display: inline-block;
+}
+
+main.main-comment-container div.little-comment-container div.post-card {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  width: 525px;
+  margin: auto;
+  margin: 30px auto 15px auto;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.post-information {
+  height: 500px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.comments {
+  padding-bottom: 15px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.header {
+  width: 100%;
+  height: 50px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.header div.author {
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.header h2 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.header div.time-stamp {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.card-body p {
+  margin: 15px;
+  margin-bottom: 0px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.card-body div.closing-information {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.card-body div.closing-information span#hashtags {
+  display: inline-block;
+}
+
+main.main-comment-container div.little-comment-container div.post-card div.card-body div.closing-information span#location {
+  display: inline-block;
+  float: right;
+}
+
+span#report-post {
+  float: right;
+}
+
+/*comment form*/
+
+main.main-comment-container div.little-comment-container div.post-card form {
+  width: 100%;
+  padding: 15px;
+  line-height: 0;
+}
+
+main.main-comment-container div.little-comment-container div.post-card form textarea {
+  width: 80%;
+  resize: none;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #a1a1a1;
+  display: inline-block;
+  float: left;
+  outline: none;
+  max-height: 45px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main.main-comment-container div.little-comment-container div.post-card form button {
+  margin: 0;
+  display: inline-block;
+  background: #4682B4;
+  height: 45px;
+  width: 20%;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+}
+
+main.main-comment-container div.little-comment-container div.post-card form textarea::placeholder {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card .individual-comment-container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card .individual-comment-container .comment-info-section {
+  margin-bottom: 10px;
+}
+
+main.main-comment-container div.little-comment-container div.post-card .individual-comment-container .comment-info-section span {
+  color: #4682B4;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+main.main-comment-container div.little-comment-container div.post-card .individual-comment-container .comment-info-section p {
+  margin: 0;
+  display: inline-block;
+}
+
+main.main-comment-container div.little-comment-container div.comments {
+  width: 100%;
+  padding: 15px;
+}
+
+main.main-comment-container div.little-comment-container div.comments h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*error pages*/
+
+.no-result {
+  text-align: center;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 15px;
+}
+
+.no-result span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.post-message {
+  text-align: center;
+  height: 70px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 15px;
+}
+
+.post-message a {
+  color: #4682B4;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+/*reporting table on account page*/
+
+#report-item {
+  display: grid;
+  grid-template-columns: 300px 200px 200px 200px;
+}
+
+div#link {
+  margin-left: 20px;
+}
+
+div#link {
+  margin-left: 20px;
+}
+
+div#link a {
+  text-decoration: none;
+  color: #4682B4;
+  margin-left: 20px;
+}
+
+span#edit-post {
+  float: right;
+  margin-right: 10px;
+}
+
+/*edit post page*/
+
+.edit-form-1 {
+  height: auto;
+}
+
+.edit-form-2 {
+  height: auto;
+}
+
+textarea#edit-area {
+  width: 100%;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid #a1a1a1;
+  display: inline-block;
+  float: left;
+  outline: none;
+  max-height: 45px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 10px 0;
+}
+
+input#button {
+  width: 100%;
+  border: none;
+  background: #4682B4;
+  border-radius: 4px;
+  padding: 5px;
+  color: #fff;
+}
+
+span#show-hide {
+  margin-left: 15px;
+  color: #4682B4;
+}
+
+main.main-comment-container div.little-comment-container div#comments-2 {
+  padding-top: 0px;
+}
+
+.delete-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form#form-2 input[type="radio"] {
+  margin-left: 15%;
+}
+
+form#form-1 {
+  padding-top: 5px;
+}
+
+form#form-2 {
+  padding-top: 5px;
+}
+
+.complaints-container a {
+  text-decoration: none;
+  color: #4682B4;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+img {
+  height: 225px;
+  width: 100%;
+}

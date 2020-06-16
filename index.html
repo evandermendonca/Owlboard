@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Owlboard | Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+  <body>
+    <div class="page-container">
+      <div class="project-info">
+        <h1>Owlboard</h1>
+        <h2>Welcome to Owlboard</h2>
+        <p>Use the form to the right to login or create an account.</p>
+      </div>
+      
+      <div class="form-container">
+        <form class="form-signin" action="php/log.php" method="post">
+          <div class="header">
+              <span>Login</span>                  
+            </div>
+          <div class="input-1">
+            <input type="text" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+          </div>
+          <div class="input-2">
+              <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+          <hr>
+          <a class="btn-2" href="http://lamp.cse.fau.edu/~cen4010fal19_g08/sign_up.php" type="button">Create New Account</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="links">
+          <a href="http://lamp.cse.fau.edu/~cen4010fal19_g08/sign_up.php">Sign Up</a>
+          <a href="#">Log In</a>
+        </div>
+        <hr>
+        <p>Owlboard © 2019</p>
+        <div class="product-info">
+          <p><b>A <span>Linkversity Labs</span> Product</b> by William Donahue, Raul Tiza, Evander Mendonca, and Edgar Herrera</p>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

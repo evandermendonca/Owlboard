@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  background-color: #C0C0C0;
+}
+
+.project-info {
+  float: left;
+  max-width: 550px;
+  margin-left: 10%;
+  margin-top: 10%;
+  padding: 15px;
+}
+
+.project-info h1 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.project-info h2 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.project-info p {
+  margin: 0;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin-top: 10%;
+  margin-right: 10%;
+  background: #fff;
+  border-radius: 8px;
+  float: right;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.form-signin span {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="text"], .form-signin input[type="password"], .form-signin input[type="input"]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/*media queries for formatting main content items*/
+@media screen and (min-width: 1300px) { /*media query for formatting purposes*/
+  .project-info {
+    margin-left: 15%;
+  }
+
+  .form-signin {
+    margin-right: 15%;
+  }
+}
+
+@media screen and (min-width: 1500px) { /*media query for formatting purposes*/
+  .project-info {
+    margin-left: 20%;
+  }
+
+  .form-signin {
+    margin-right: 20%;
+  }
+}
+
+/*radio buttons for account type*/
+
+.form-signin .account-type-selection {
+  position: relative;
+  margin-top: 10px;
+}
+
+.form-signin span.account-type {
+  background-color: #fff;
+  border: 1px solid #ccd0d5;
+  box-sizing: border-box;
+  display: inline-block;
+  flex: 1 0 auto;
+  font-weight: normal;
+  padding: 0;
+  position: relative;
+  width: auto;
+  border-radius: 5px;
+}
+
+.form-signin .input-options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+span#at-1 {
+  margin-right: 10px;
+}
+
+.form-signin label.account-type {
+  box-sizing: border-box;
+  color: #1c1e21;
+  display: inline-block;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  padding: 0 28px 0 10px;
+  color: grey;
+}
+
+.form-signin .radio-input {
+  height: 40px;
+  margin: 0;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+/*end of main content media queries*/
+
+.form-signin button {
+  margin: auto;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+hr {
+  align-items: center;
+  border-bottom: 0px solid #ddd;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.form-signin a.btn-2 {
+  display: block;
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.forgot-password-link {
+  text-align: center;
+}
+
+.form-signin .password-link {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10em; 
+}
+
+.links {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+footer p {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+footer hr {
+  align-items: center;
+  border-bottom: 0px solid #ddd;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 35%;
+  margin-left: 15px;
+}
+
+footer div.product-info {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+footer div.product-info p {
+  margin: 0;
+}
+
+footer div.product-info span {
+  color: #4682B4;
+}
